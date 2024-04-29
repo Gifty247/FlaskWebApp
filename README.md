@@ -6,14 +6,14 @@
 3. Setup
 4. Future Plans
 
-Dataset
+1. Dataset
 The dataset is sourced from Kaggle's TuSimple lane detection challenge, including 12,816 images split into training and testing sets:
 
 Training: 3626 frames and 3626 lane masks.
 Testing: 2782 frames and 2782 lane masks.
 
 
-Algorithm
+2.Algorithm
 A U-Net model is used for lane detection:
 
 
@@ -25,25 +25,25 @@ Results:
 - Dice Coefficient: 0.7685
 - IoU: 0.4927
 
-Setup
+3.Setup
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/Gifty247/FlaskWebApp.git
    
 Create a virtual environment:
-
+ ```bash
 python -m venv venv
 
 Install dependencies:
-
+ ```bash
 pip install -r requirements.txt
 
 Run the application:
-
+ ```bash
 python main.py
 
-Future Plans
+4. Future Plans
 Data Diversity: Include more diverse driving conditions.
 Model Refinement: Explore deeper models and enhance robustness.
 Deployment: Optimize for real-time use and integrate into larger systems.
