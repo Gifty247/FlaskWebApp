@@ -35,20 +35,22 @@ Results:
    
 Create a virtual environment:
 
-  ```bash
+   ```bash
 python -m venv venv
 
 
 Install dependencies:
 
- ```bash
+  ```bash
 pip install -r requirements.txt
 
 
 Run the application:
 
- ```bash
+  ```bash
 python main.py
+
+
 
 
 4. Future Plans
