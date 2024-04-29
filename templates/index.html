@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    <table border=1 style="width:100%">
+        <!-- Image upload form -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <tr>
+                <td><input type="file" name="file" value="Please choose an image" ></td>
+                <td><input type="submit" class="btnRegister" value="Upload Image"></td>
+            </tr>
+            <tr><td colspan="2"><img src="{{url_for('static', filename=image_path)}}" width="800" height="800" ></td></tr>
+        </form>
+    </table>
+
+    <!-- Display the processed image if available -->
+    {% if image_path %}
+    <p>Lane Detection Result: Lanes detected and highlighted in the image.</p>
+    {% else %}
+        <p>No image processed yet.</p>
+    {% endif %}
+</div>
+
+{% endblock %}
